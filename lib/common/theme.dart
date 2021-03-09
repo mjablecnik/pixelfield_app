@@ -5,6 +5,8 @@ class AppTheme {
   static const double avatarWidth = 28.0;
   static const double avatarHeight = 28.0;
 
+  static const double carouselHeight = 200.0;
+
   static const backgroundColor = Color.fromRGBO(5, 6, 31, 1);
 }
 
@@ -12,8 +14,10 @@ ThemeData appTheme = ThemeData(
   bottomNavigationBarTheme: BottomNavigationBarThemeData(
     backgroundColor: AppTheme.backgroundColor,
     selectedIconTheme: IconThemeData(size: 30),
-    unselectedIconTheme: IconThemeData(size: 30)
+    unselectedIconTheme: IconThemeData(size: 30),
   ),
+
+  scaffoldBackgroundColor: AppTheme.backgroundColor,
 
   fontFamily: 'Inter',
 
