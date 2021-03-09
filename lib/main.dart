@@ -2,25 +2,18 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:pixelfield_app/common/constants.dart';
-import 'package:pixelfield_app/items/item_controller.dart';
-import 'package:pixelfield_app/dialog/dialog_controller.dart';
-import 'package:pixelfield_app/home/home_view.dart';
-import 'package:pixelfield_app/items/item_view.dart';
+import 'package:pixelfield_app/common/theme.dart';
+import 'package:pixelfield_app/pf_app/view.dart';
 
 
 Future<void> main() async {
 
   runApp(
     GetMaterialApp(
+      theme: appTheme,
       smartManagement: SmartManagement.full,
       initialRoute: Routes.HOME,
-      initialBinding: BindingsBuilder(() {
-        Get.lazyPut(() => BasicController(), fenix: true);
-        Get.lazyPut(() => DialogController(), fenix: true);
-      }),
-      getPages: [
-        GetPage(name: Routes.HOME, page: () => HomeView()),
-        GetPage(name: Routes.ITEMS, page: () => BasicView()),
-      ]),
+      home: PfAppView(),
+    )
   );
 }
