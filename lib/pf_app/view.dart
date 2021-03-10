@@ -49,7 +49,7 @@ class TabNavigationItem {
 class PfAppView extends StatelessWidget {
   @override
   Widget build(context) {
-    return GetBuilder<PfAppController>(
+    return GetX<PfAppController>(
       init: PfAppController(),
       builder: (controller) => Scaffold(
         body: AnimatedIndexedStack(

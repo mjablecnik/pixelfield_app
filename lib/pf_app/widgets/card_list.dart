@@ -9,7 +9,7 @@ class CardDto {
   String title;
   List<Color> colors;
 
-  CardDto(this.title, {this.author, this.colors});
+  CardDto(this.title, { this.author, this.colors });
 }
 
 class CardList extends StatelessWidget {

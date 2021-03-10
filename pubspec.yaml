@@ -28,6 +28,8 @@ dependencies:
   flutter_svg: ^0.19.1
   carousel_slider: ^3.0.0
   carousel_indicator: ^1.0.5
+  separated_column: ^1.0.1+2
+  google_fonts: ^1.1.2
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
