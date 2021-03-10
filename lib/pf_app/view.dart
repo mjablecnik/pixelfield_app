@@ -2,7 +2,7 @@ import 'package:animated_indexed_stack/animated_indexed_stack.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:get/get.dart';
+import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:pixelfield_app/common/constants.dart';
 import 'package:pixelfield_app/common/theme.dart';
 import 'package:pixelfield_app/pf_app/pages/dashboard_page.dart';
@@ -14,20 +14,24 @@ import 'controller.dart';
 class TabNavigationItem {
   final Widget page;
   final Widget icon;
+  final Widget iconActive;
 
   TabNavigationItem({
     @required this.page,
     @required this.icon,
+    this.iconActive,
   });
 
   static List<TabNavigationItem> get items => [
         TabNavigationItem(
           page: DashboardPage(),
           icon: SvgPicture.asset(SvgIcons.breegy),
+          iconActive: SvgPicture.asset(SvgIcons.breegyActive),
         ),
         TabNavigationItem(
           page: ProjectsPage(),
-          icon: SvgPicture.asset(SvgIcons.main),
+          icon: SvgPicture.asset(SvgIcons.list),
+          iconActive: SvgPicture.asset(SvgIcons.listActive),
         ),
         TabNavigationItem(
           page: ProfilePage(),
@@ -50,7 +54,6 @@ class PfAppView extends StatelessWidget {
   @override
   Widget build(context) {
     return GetX<PfAppController>(
-      init: PfAppController(),
       builder: (controller) => Scaffold(
         body: AnimatedIndexedStack(
           transitionBuilder: slideTransition,
@@ -65,9 +68,9 @@ class PfAppView extends StatelessWidget {
           currentIndex: controller.index,
           onTap: controller.changeIndex,
           items: [
-            for (final tabItem in TabNavigationItem.items)
+            for (MapEntry e in TabNavigationItem.items.asMap().entries)
               BottomNavigationBarItem(
-                icon: tabItem.icon,
+                icon: controller.index != e.key ? e.value.icon : e.value.iconActive ?? e.value.icon,
                 label: "",
               )
           ],

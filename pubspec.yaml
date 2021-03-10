@@ -56,8 +56,9 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/icons/breegy.svg
-    - assets/icons/main.svg
-    - assets/icons/profile.svg
+    - assets/icons/breegy-active.svg
+    - assets/icons/list.svg
+    - assets/icons/list-active.svg
     - assets/icons/clock.svg
     - assets/images/carousel1.jpg
     - assets/images/carousel2.jpg

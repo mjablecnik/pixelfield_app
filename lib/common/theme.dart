@@ -87,5 +87,8 @@ ThemeData appTheme = ThemeData(
   ),
 
   scaffoldBackgroundColor: AppTheme.backgroundColor,
+  textTheme: TextTheme(
+    bodyText2: TextStyle(color: Colors.white)
+  )
 );
 

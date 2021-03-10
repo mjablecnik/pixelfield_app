@@ -5,9 +5,10 @@ import 'package:pixelfield_app/pf_app/widgets/foundation_list.dart';
 import 'package:pixelfield_app/pf_app/widgets/project_list.dart';
 
 class SvgIcons {
-  static const String main = 'assets/icons/main.svg';
-  static const String profile = 'assets/icons/profile.svg';
+  static const String list = 'assets/icons/list.svg';
+  static const String listActive = 'assets/icons/list-active.svg';
   static const String breegy = 'assets/icons/breegy.svg';
+  static const String breegyActive = 'assets/icons/breegy-active.svg';
   static const String clock = 'assets/icons/clock.svg';
 }
 
