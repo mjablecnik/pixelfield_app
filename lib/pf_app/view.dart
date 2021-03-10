@@ -32,8 +32,8 @@ class TabNavigationItem {
         TabNavigationItem(
           page: ProfilePage(),
           icon: Container(
-            width: AppTheme.avatarWidth,
-            height: AppTheme.avatarHeight,
+            width: AppTheme.avatarSize.width,
+            height: AppTheme.avatarSize.height,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               image: DecorationImage(

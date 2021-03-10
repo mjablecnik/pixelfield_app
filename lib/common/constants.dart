@@ -18,6 +18,8 @@ class SvgIcons {
 }
 
 class Texts {
+  static const String dashboardProjectTitle = "Vyřešíme v Česku #naDobro";
+  static const String dashboardCelebrityTitle = "Řeší s námi naDobro";
   static const String foundationHeader = "Nadace";
   static const String foundationButton = "Zobraz vše";
   static const String projectItemLabelNew = "Nové";

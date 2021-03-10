@@ -22,6 +22,13 @@ class ProjectDto {
 }
 
 class ProjectList extends StatelessWidget {
+  final List<ProjectDto> projectList;
+
+  const ProjectList(
+    this.projectList, {
+    Key key,
+  }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -31,7 +38,7 @@ class ProjectList extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         padding: AppTheme.projectListPadding,
         children: [
-          for (var item in listCelebrities)
+          for (var item in this.projectList)
             GestureDetector(
               onTap: () {
                 print("Clicked to: ${item.title}");
@@ -73,7 +80,11 @@ class _ProjectItem extends StatelessWidget {
                   ),
                 ),
               ),
-              Positioned(left: 5, top: 5, child: _NewLabel(item: item)),
+              Positioned(
+                left: AppTheme.projectItemLabelPosition.left,
+                top: AppTheme.projectItemLabelPosition.top,
+                child: _NewLabel(item: item),
+              ),
             ],
           ),
           Container(
@@ -151,7 +162,7 @@ class _ProjectProgress extends StatelessWidget {
         }
       }(),
       Padding(
-        padding: const EdgeInsets.symmetric(vertical: 8),
+        padding: AppTheme.projectItemProgressPadding,
         child: LinearProgressIndicator(
           value: item.patronsNum / item.patronsGoal,
           backgroundColor: AppTheme.projectItemProgressBackgroundColor,
