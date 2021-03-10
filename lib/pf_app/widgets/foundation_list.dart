@@ -7,9 +7,9 @@ import 'package:separated_column/separated_column.dart';
 
 class FoundationDto {
   String name;
-  String logoUrl;
+  String logoPath;
 
-  FoundationDto(this.name, {this.logoUrl});
+  FoundationDto(this.name, {this.logoPath});
 }
 
 class FoundationList extends StatelessWidget {
@@ -56,7 +56,7 @@ class FoundationList extends StatelessWidget {
                         shape: AppTheme.foundationListItemImageShape,
                         image: DecorationImage(
                           fit: BoxFit.fill,
-                          image: NetworkImage(item.logoUrl),
+                          image: AssetImage(item.logoPath),
                         ),
                       ),
                     ),

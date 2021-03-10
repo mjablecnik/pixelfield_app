@@ -30,6 +30,7 @@ dependencies:
   carousel_indicator: ^1.0.5
   separated_column: ^1.0.1+2
   google_fonts: ^1.1.2
+  sprintf: ^5.0.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -57,11 +58,16 @@ flutter:
     - assets/icons/breegy.svg
     - assets/icons/main.svg
     - assets/icons/profile.svg
+    - assets/icons/clock.svg
     - assets/images/carousel1.jpg
     - assets/images/carousel2.jpg
     - assets/images/carousel3.jpg
     - assets/images/carousel4.jpg
     - assets/images/carousel5.jpg
+    - assets/images/logo1.jpg
+    - assets/images/logo2.png
+    - assets/images/logo3.jpg
+    - assets/images/logo4.png
     - assets/images/avatar.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -37,8 +37,29 @@ class AppTheme {
   static const EdgeInsets foundationListHeaderButtonPadding = EdgeInsets.all(8.0);
   static final TextStyle foundationListItemTextStyle = GoogleFonts.inter(color: Colors.white, fontSize: 16);
   static const EdgeInsets foundationListItemTextPadding = EdgeInsets.symmetric(horizontal: 1);
-  static const Size foundationListItemImageSize = Size(35, 35);
+  static const Size foundationListItemImageSize = Size(35.0, 35.0);
   static const BoxShape foundationListItemImageShape = BoxShape.circle;
+
+  static const Size projectListSize = Size(200.0, 310.0);
+  static const EdgeInsets projectListPadding = EdgeInsets.symmetric(horizontal: 16.0);
+  static const Size projectItemSize = Size(156.0, 194.0);
+  static const EdgeInsets projectItemMargin = EdgeInsets.symmetric(horizontal: 8.0);
+  static const EdgeInsets projectItemTextPadding = EdgeInsets.symmetric(vertical: 8.0);
+  static const int projectItemTextMaxLines = 2;
+  static final TextStyle projectItemTextStyle = GoogleFonts.inter(color: Colors.white, fontSize: 14.0, fontWeight: FontWeight.w600, height: 1.2);
+  static final BoxDecoration projectItemLabelDecoration = BoxDecoration(color: Color.fromRGBO(84, 88, 228, 1), borderRadius: BorderRadius.circular(4));
+  static const EdgeInsets projectItemLabelPadding = EdgeInsets.all(5.0);
+  static const EdgeInsets projectItemLabelTextPadding = EdgeInsets.symmetric(horizontal: 5.0);
+  static final TextStyle projectItemLabelTextStyle = GoogleFonts.inter(color: Colors.white, fontSize: 10.0, fontWeight: FontWeight.w600, height: 1.2);
+  static const EdgeInsets projectItemProgressTextPadding = EdgeInsets.symmetric(vertical: 4.0);
+  static final TextStyle projectItemProgressTextStyle = GoogleFonts.inter(color: Colors.white, fontSize: 12.0, fontWeight: FontWeight.w600, height: 1.2);
+  static final TextStyle projectItemProgressReadyTextStyle = GoogleFonts.inter(color: Color.fromRGBO(84, 88, 228, 1), fontSize: 12.0, fontWeight: FontWeight.w600, height: 1.2);
+  static final Icon projectItemProgressReadyIcon = Icon(Icons.done, color: Color.fromRGBO(84, 88, 228, 1));
+  static final Color projectItemProgressColor = Color.fromRGBO(84, 88, 228, 1);
+  static final Color projectItemProgressBackgroundColor = Color.fromRGBO(229, 229, 229, 1);
+  static final double projectItemProgressHeight = 8.0;
+  static final EdgeInsets projectItemProgressTimeTextPadding = EdgeInsets.only(left: 4.5);
+  static final TextStyle projectItemProgressTimeTextStyle = GoogleFonts.inter(color: Color.fromRGBO(121, 121, 125, 1), fontSize: 12.0, fontWeight: FontWeight.w600, height: 1.2);
 }
 
 ThemeData appTheme = ThemeData(
