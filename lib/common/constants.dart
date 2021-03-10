@@ -4,12 +4,6 @@ import 'package:pixelfield_app/pf_app/widgets/card_list.dart';
 import 'package:pixelfield_app/pf_app/widgets/foundation_list.dart';
 import 'package:pixelfield_app/pf_app/widgets/project_list.dart';
 
-class Routes {
-  static const HOME = '/';
-  static const ITEMS = '/items';
-  static const JOTTINGS = '/jottings';
-}
-
 class SvgIcons {
   static const String main = 'assets/icons/main.svg';
   static const String profile = 'assets/icons/profile.svg';

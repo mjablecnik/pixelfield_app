@@ -12,7 +12,6 @@ Future<void> main() async {
     GetMaterialApp(
       theme: appTheme,
       smartManagement: SmartManagement.full,
-      initialRoute: Routes.HOME,
       home: PfAppView(),
     )
   );
