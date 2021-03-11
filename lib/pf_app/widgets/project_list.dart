@@ -4,8 +4,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:pixelfield_app/common/constants.dart';
-import 'package:pixelfield_app/common/theme.dart';
+import 'package:pixelfield_app/pf_app/common/constants.dart';
+import 'package:pixelfield_app/pf_app/common/theme.dart';
 import 'package:sprintf/sprintf.dart';
 
 class ProjectDto {

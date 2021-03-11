@@ -4,8 +4,8 @@ import 'package:flutter/widgets.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:get/get.dart';
 import 'package:get/get_state_manager/src/simple/get_controllers.dart';
-import 'package:pixelfield_app/common/constants.dart';
-import 'package:pixelfield_app/common/theme.dart';
+import 'package:pixelfield_app/pf_app/common/constants.dart';
+import 'package:pixelfield_app/pf_app/common/theme.dart';
 
 class CarouselController extends GetxController {
   RxInt _currentIndex = 0.obs;
